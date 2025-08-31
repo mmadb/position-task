@@ -1,0 +1,155 @@
+body {
+    height: 1000px;
+    background-color: rgba(190, 190, 190, .5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* height: 1000px; */
+    font-family: arial;
+}
+
+h2 {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+ul {
+    justify-content: space-around;
+    display: flex;
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li>a:hover {
+    color: rgba(0, 0, 0, .8)
+}
+
+@media(max-width:700px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+div>p {
+    /* padding: 15px 20px; */
+    margin: 60px 80px;
+}
+
+section>img {
+    /* width: 600px; */
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+main>section {
+    flex: 1px;
+    /* background-color: rgb(100, 100, 100); */
+}
+
+section>a {
+    text-decoration: none;
+    /* top: 30px; */
+}
+
+section {
+    background-color: rgba(100, 100, 100, 0.4);
+    margin: 5px;
+    border-radius: 5px;
+    height: 540px;
+    text-align: center;
+}
+
+section>a {
+    padding: 10px 15px;
+    top: 30px;
+    display: inline-flex;
+    margin: 30px 15px;
+    gap: 10PX;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.buy {
+    background-color: transparent;
+    border: .5px solid #0071e3;
+    color: #0071e3;
+}
+
+.learn {
+    background-color: #0071e3;
+    color: #fff;
+    /* padding-top: 12px; */
+}
+
+.buy:hover {
+    background-color: #0071e3;
+    color: #fff;
+    transition: all .6s;
+}
+
+/* footer{
+    margin-top: 500px;
+     display: flex; 
+     width: 100%;
+}
+footer>a{
+    display: flex;
+    padding: 30px;
+   
+} */
+
+
+
+
+footer {
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    margin-top: 300px;
+}
+
+footer>section {
+    flex: 1px;
+}
+
+footer>section>a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+section>a:hover{
+    color: rgba(0, 0, 0, .8)
+}
