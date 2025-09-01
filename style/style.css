@@ -52,15 +52,24 @@ li>a:hover {
 /* منو بالای سایت */
 
 
-
-
-@media(max-width:700px) {
+@media (max-width: 600px) {
     ul {
         display: flex;
         flex-direction: column;
     }
+    main {
+        flex-direction: column; /* بخش‌ها رو زیر هم نشون می‌ده */
+    }
+    section {
+        width: 90%; /* عرض بخش‌ها رو تنظیم می‌کنه */
+        margin: 10px auto; /* فاصله بین بخش‌ها */
+    }
+    section>a {
+        width: 90%; /* دکمه‌ها تو موبایل بزرگ‌تر و مرتب‌تر می‌شن */
+        margin: 5px auto;
+        display: block; /* مطمئن می‌شه دکمه‌ها تو یه خط جداگانه باشن */
+    }
 }
-
 
 
 /* متن نوشته شده زیر منو */
@@ -80,21 +89,32 @@ section>img {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
-    flex-wrap: wrap;
+   
+
+    max-height: 300px;
+    object-fit: cover;
 }
 
 main {
     display: flex;
     margin-top: 30px;
+     flex-wrap: wrap; 
+     justify-content: space-around;
 }
 
 h3 {
+   
     text-align: center;
+    height: auto;
 }
 
 main>section {
-    flex: 1px;
-    /* background-color: rgb(100, 100, 100); */
+  flex: 0 1 calc(33.33% - 10px); /* هر بخش 33.33% عرض بگیره (برای 3 تا در ردیف) با فاصله */
+    margin: 5px;
+    /* background-color: rgba(100, 100, 100, 0.4); */
+    border-radius: 5px;
+    height: auto;
+    text-align: center;
 }
 
 section>a {
@@ -104,20 +124,28 @@ section>a {
 
 section {
     background-color: rgba(100, 100, 100, 0.4);
-    margin: 5px;
+    /* margin: 5px; */
     border-radius: 5px;
     height: auto;
     text-align: center;
 }
 
 section>a {
-    padding: 10px 15px;
+   padding: 10px 15px;
     top: 30px;
-    display: inline-flex;
-    margin: 30px 15px;
-    gap: 10PX;
+
+     /* دکمه‌ها رو بلوک می‌کنه تا تو موبایل به هم نریزن */
+    display: block; 
+   
+     /* فاصله بین دکمه‌ها رو تنظیم می‌کنه */
+    margin: 10px auto;
+    gap: 10px;
     border-radius: 15px;
     text-align: center;
+
+    /* عرض دکمه‌ها رو محدود می‌کنه */
+    width: 80%; 
+    
 }
 
 /* عکس و متن های سایت */
